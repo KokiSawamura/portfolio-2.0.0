@@ -1,9 +1,9 @@
 (function ($) {
   $(function () {
-    Barba.Pjax.init();
+    /* Barba.Pjax.init(); */
 
     $.scrollify({
-      section : ".example-classname",
+      section : ".scrollify-section",
     });
   });
 })(jQuery);

@@ -1,12 +1,67 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700');
 $main-color: #002142;
+$accent-color: #FA3140;
+$title-font: 'Josefin Sans';
 
 /* default */
 body {
   padding: 40px;
   font-family: 'Noto Sans JP', sans-serif;
   background-color: $main-color;
+}
+
+/* component */
+h1 {
+  margin-bottom: 40px;
+  font-size: 120px;
+  font-family: $title-font;
+  color: white;
+  font-weight: 400;
+}
+
+.border {
+  position: relative;
+  width: 168px;
+  height: 24px;
+  &:before, &:after {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 3px;
+    background-color: $accent-color;
+  }
+  &:before {
+    top: 0;
+    left: 0;
+  }
+  &:after {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 12px 24px;
+  text-decoration: none;
+  line-height: 1;
+  &:hover, &:focus, &:visited {
+    text-decoration: none;
+    color: white;
+  }
+  &-primary {
+    background-color: $accent-color;
+    color: white;
+  }
+}
+
+/* content */
+
+.scrollify-section {
+  padding: 40px 88px;
 }
 
 .home {
@@ -16,18 +71,27 @@ body {
 
 .side-nav {
   position: fixed;
+  top: 50%;
   left: 40px;
+  transform: translateY(-50%);
 }
 
 .page-nav {
   >ul {
     padding: 0;
     margin: 0;
+    >li {
+      margin-bottom: 16px;
+      line-height: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
   button {
     position: relative;
-    width: 24px;
-    padding: calc(24px + 3px) 0; // padding + content height
+    width: 32px;
+    padding: calc(8px + 3px) 0; // padding + content height
     -webkit-appearance: none;
     border: none;
     font-size: 0;
@@ -51,6 +115,6 @@ body {
     }
   }
   .active button {
-    width: 40px;
+    width: 48px;
   }
 }
