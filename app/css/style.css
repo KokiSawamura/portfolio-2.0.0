@@ -2,44 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700");
 /* default */
 body {
-  padding: 40px;
   font-family: 'Noto Sans JP', sans-serif;
   background-color: #002142;
 }
 
 /* component */
-h1 {
-  margin-bottom: 40px;
-  font-size: 120px;
-  font-family: "Josefin Sans";
-  color: white;
-  font-weight: 400;
-}
-
-.border {
-  position: relative;
-  width: 168px;
-  height: 24px;
-}
-
-.border:before, .border:after {
-  position: absolute;
-  content: "";
-  width: 70%;
-  height: 3px;
-  background-color: #FA3140;
-}
-
-.border:before {
-  top: 0;
-  left: 0;
-}
-
-.border:after {
-  bottom: 0;
-  right: 0;
-}
-
 .btn {
   display: inline-block;
   border-radius: 3px;
@@ -120,4 +87,61 @@ h1 {
 
 .page-nav .active button {
   width: 48px;
+}
+
+#top h1 {
+  margin-bottom: 4rem;
+  font-size: 120px;
+  font-family: "Josefin Sans";
+  color: white;
+  font-weight: 400;
+}
+
+#top .border {
+  position: relative;
+  width: 168px;
+  height: 24px;
+  margin-bottom: 4rem;
+}
+
+#top .border:before, #top .border:after {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 3px;
+  background-color: #FA3140;
+}
+
+#top .border:before {
+  top: 0;
+  left: 0;
+}
+
+#top .border:after {
+  bottom: 0;
+  right: 0;
+}
+
+#top .btn {
+  font-size: 18px;
+}
+
+#top .lead {
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 28px;
+}
+
+#top .moonlight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/moonlight.svg) no-repeat;
+}
+
+#about-me {
+  display: flex;
+  align-items: center;
 }

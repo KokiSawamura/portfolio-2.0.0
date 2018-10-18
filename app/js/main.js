@@ -4,6 +4,7 @@
 
     $.scrollify({
       section : ".scrollify-section",
+      interstitialSection: 'header, footer',
     });
   });
 })(jQuery);
