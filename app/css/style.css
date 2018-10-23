@@ -132,16 +132,27 @@ body {
   font-size: 28px;
 }
 
-#top .moonlight {
-  position: absolute;
+#about-me {
+  display: flex;
+  align-items: center;
+}
+
+.moon-background {
+  position: fixed;
   top: 0;
   right: 0;
   width: 100vw;
   height: 100vh;
-  background: url(../images/moonlight.svg) no-repeat;
 }
 
-#about-me {
-  display: flex;
-  align-items: center;
+.moonlight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -130px;
+  width: 964px;
+  height: 964px;
+  margin: auto;
+  background: url(../images/moonlight.svg) center no-repeat;
+  background-size: contain;
 }
