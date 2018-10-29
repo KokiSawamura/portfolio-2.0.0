@@ -147,12 +147,32 @@ body {
 
 .moonlight {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
   right: -130px;
   width: 964px;
   height: 964px;
-  margin: auto;
   background: url(../images/moonlight.svg) center no-repeat;
+  background-size: 964px 964px;
+}
+
+.moon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 546px;
+  height: 546px;
+  background: url(../images/moon.svg) center no-repeat;
+  background-size: contain;
+}
+
+.wolf {
+  position: absolute;
+  top: 190px;
+  left: -580px;
+  width: 1530px;
+  height: 684px;
+  background: url(../images/wolf.svg) center no-repeat;
   background-size: contain;
 }
