@@ -169,10 +169,30 @@ body {
 
 .wolf {
   position: absolute;
-  top: 190px;
-  left: -580px;
+  top: 180px;
+  left: -570px;
   width: 1530px;
   height: 684px;
   background: url(../images/wolf.svg) center no-repeat;
+  background-size: contain;
+}
+
+.cloud {
+  position: absolute;
+  bottom: 80px;
+  left: -50px;
+  width: 414px;
+  height: 250px;
+  background: url(../images/cloud.svg) center no-repeat;
+  background-size: contain;
+}
+
+.stars {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  width: 760px;
+  height: 617px;
+  background: url(../images/stars.svg) center no-repeat;
   background-size: contain;
 }
