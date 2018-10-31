@@ -137,23 +137,29 @@ body {
   align-items: center;
 }
 
+#work {
+  display: flex;
+  align-items: center;
+}
+
 .moon-background {
   position: fixed;
   top: 0;
   right: 0;
   width: 100vw;
   height: 100vh;
+  z-index: -1;
 }
 
 .moonlight {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -130px;
-  width: 964px;
-  height: 964px;
+  right: -230px;
+  width: 1194px;
+  height: 1194px;
   background: url(../images/moonlight.svg) center no-repeat;
-  background-size: 964px 964px;
+  background-size: 1194px 1194px;
 }
 
 .moon {
@@ -179,8 +185,8 @@ body {
 
 .cloud {
   position: absolute;
-  bottom: 80px;
-  left: -50px;
+  bottom: 210px;
+  left: 30px;
   width: 414px;
   height: 250px;
   background: url(../images/cloud.svg) center no-repeat;
@@ -189,8 +195,8 @@ body {
 
 .stars {
   position: absolute;
-  top: 60px;
-  left: 50px;
+  top: 180px;
+  left: 150px;
   width: 760px;
   height: 617px;
   background: url(../images/stars.svg) center no-repeat;
