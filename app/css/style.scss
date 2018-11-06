@@ -28,18 +28,22 @@ body {
     color: white;
   }
 }
-
-/* content */
-
-.scrollify-section {
-  padding: 40px 128px;
+/* header */
+header {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  .home {
+    color: white;
+    text-decoration: none;
+    &:hove, &:focus, &:visited {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 
-.home {
-  color: white;
-  text-decoration: none;
-}
-
+/* side navi */
 .side-nav {
   position: fixed;
   top: 50%;
@@ -90,6 +94,12 @@ body {
   }
 }
 
+/* content */
+
+.scrollify-section {
+  padding: 40px 128px;
+}
+
 #top {
   h1 {
     margin-bottom: 4rem;
@@ -138,6 +148,7 @@ body {
   align-items: center;
 }
 
+/* background */
 .moon-background {
   position: fixed;
   top: 0;
@@ -166,23 +177,32 @@ body {
   background: url(../images/moon.svg) center no-repeat;
   background-size: contain;
 }
+.cloud {
+  position: absolute;
+  bottom: 200px;
+  left: 40px;
+  width: 414px;
+  height: 250px;
+  background: url(../images/cloud.svg) center no-repeat;
+  background-size: contain;
+}
 .wolf {
   position: absolute;
-  top: 180px;
-  left: -570px;
+  top: 510px;
+  right: -85px;
   width: 1530px;
   height: 684px;
   background: url(../images/wolf.svg) center no-repeat;
   background-size: contain;
 }
-.cloud {
+.portfolio {
   position: absolute;
-  bottom: 210px;
-  left: 30px;
-  width: 414px;
-  height: 250px;
-  background: url(../images/cloud.svg) center no-repeat;
-  background-size: contain;
+  top: 530px;
+  left: 160px;
+  color: #FA3140;
+  font-size: 64px;
+  font-weight: 700;
+  text-shadow: 2px 3px 9px rgba(0, 0, 0, 0.25);
 }
 .stars {
   position: absolute;
