@@ -64,7 +64,8 @@ header .home:hove, header .home:focus, header .home:visited {
   margin-bottom: 0;
 }
 
-.page-nav button {
+.page-nav a {
+  display: block;
   position: relative;
   width: 32px;
   padding: calc(8px + 3px) 0;
@@ -77,11 +78,11 @@ header .home:hove, header .home:focus, header .home:visited {
   transition: width .3s;
 }
 
-.page-nav button:focus {
+.page-nav a:focus {
   outline: none;
 }
 
-.page-nav button:after {
+.page-nav a:after {
   position: absolute;
   top: 50%;
   left: 0;
@@ -99,6 +100,8 @@ header .home:hove, header .home:focus, header .home:visited {
 
 /* content */
 .scrollify-section {
+  display: flex;
+  align-items: center;
   padding: 40px 128px;
 }
 
@@ -143,16 +146,6 @@ header .home:hove, header .home:focus, header .home:visited {
   margin-bottom: 1rem;
   color: white;
   font-size: 28px;
-}
-
-#about-me {
-  display: flex;
-  align-items: center;
-}
-
-#work {
-  display: flex;
-  align-items: center;
 }
 
 /* background */

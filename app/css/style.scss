@@ -63,7 +63,8 @@ header {
       }
     }
   }
-  button {
+  a {
+    display: block;
     position: relative;
     width: 32px;
     padding: calc(8px + 3px) 0; // padding + content height
@@ -97,6 +98,8 @@ header {
 /* content */
 
 .scrollify-section {
+  display: flex;
+  align-items: center;
   padding: 40px 128px;
 }
 
@@ -139,15 +142,6 @@ header {
     font-size: 28px;
   }
 }
-#about-me {
-  display: flex;
-  align-items: center;
-}
-#work {
-  display: flex;
-  align-items: center;
-}
-
 /* background */
 .moon-background {
   position: fixed;
