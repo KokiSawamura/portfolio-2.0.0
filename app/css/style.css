@@ -50,21 +50,21 @@ header .home:hove, header .home:focus, header .home:visited {
   transform: translateY(-50%);
 }
 
-.page-nav > ul {
+.pagination > ul {
   padding: 0;
   margin: 0;
 }
 
-.page-nav > ul > li {
+.pagination > ul > li {
   margin-bottom: 16px;
   line-height: 0;
 }
 
-.page-nav > ul > li:last-child {
+.pagination > ul > li:last-child {
   margin-bottom: 0;
 }
 
-.page-nav a {
+.pagination a {
   display: block;
   position: relative;
   width: 32px;
@@ -78,11 +78,11 @@ header .home:hove, header .home:focus, header .home:visited {
   transition: width .3s;
 }
 
-.page-nav a:focus {
+.pagination a:focus {
   outline: none;
 }
 
-.page-nav a:after {
+.pagination a:after {
   position: absolute;
   top: 50%;
   left: 0;
@@ -94,7 +94,7 @@ header .home:hove, header .home:focus, header .home:visited {
   background-color: white;
 }
 
-.page-nav .active button {
+.pagination .active button {
   width: 48px;
 }
 
