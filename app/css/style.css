@@ -94,6 +94,10 @@ header .home:hove, header .home:focus, header .home:visited {
   background-color: white;
 }
 
+.pagination a.active {
+  width: 50px;
+}
+
 .pagination .active button {
   width: 48px;
 }

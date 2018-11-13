@@ -4,7 +4,6 @@
 
     $.scrollify({
       section: '.scrollify-section',
-      interstitialSection: 'header, footer',
       scrollbars: false,
       updateHash: false,
       before: function (i, panels) {
@@ -19,6 +18,7 @@
         
         $('.pagination .active').removeClass('active');
         $('.pagination').find('a[href=\'#' + ref + '\']').addClass('active');
+        console.log($('.pagination').find('a[href=\'#' + ref + '\']'),ref)
       }
     });
   });

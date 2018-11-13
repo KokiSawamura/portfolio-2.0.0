@@ -89,6 +89,9 @@ header {
       height: 3px;
       background-color: white;
     }
+    &.active {
+      width: 50px;
+    }
   }
   .active button {
     width: 48px;
