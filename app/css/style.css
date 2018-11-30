@@ -115,6 +115,7 @@ header .home:hove, header .home:focus, header .home:visited {
   font-family: "Josefin Sans";
   color: white;
   font-weight: 400;
+  text-shadow: 4px 7px #002144;
 }
 
 #top .border {
@@ -150,6 +151,7 @@ header .home:hove, header .home:focus, header .home:visited {
   margin-bottom: 1rem;
   color: white;
   font-size: 28px;
+  text-shadow: 2px 2px #002144;
 }
 
 /* background */
