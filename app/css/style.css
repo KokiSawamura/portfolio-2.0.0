@@ -175,6 +175,14 @@ header .home:hove, header .home:focus, header .home:visited {
   background-size: 1194px 1194px;
 }
 
+@media screen and (max-width: 928px) {
+  .moonlight {
+    top: calc(50% + 120px);
+    left: auto;
+    right: -420px;
+  }
+}
+
 .moon {
   position: absolute;
   top: 50%;
@@ -214,6 +222,14 @@ header .home:hove, header .home:focus, header .home:visited {
   font-size: 64px;
   font-weight: 700;
   text-shadow: 2px 3px 9px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 928px) {
+  .portfolio {
+    top: 390px;
+    right: 433px;
+    left: auto;
+  }
 }
 
 .stars {
