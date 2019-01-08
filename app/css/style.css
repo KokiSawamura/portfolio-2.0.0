@@ -58,6 +58,7 @@ header .home:hove, header .home:focus, header .home:visited {
 .pagination > ul > li {
   margin-bottom: 16px;
   line-height: 0;
+  list-style: none;
 }
 
 .pagination > ul > li:last-child {
@@ -172,7 +173,7 @@ header .home:hove, header .home:focus, header .home:visited {
   width: 1194px;
   height: 1194px;
   background: url(../images/moonlight.svg) center no-repeat;
-  background-size: 1194px 1194px;
+  background-size: 100%;
 }
 
 @media screen and (max-width: 928px) {
@@ -180,6 +181,8 @@ header .home:hove, header .home:focus, header .home:visited {
     top: calc(50% + 120px);
     left: auto;
     right: -420px;
+    width: 160%;
+    height: 160%;
   }
 }
 
@@ -188,8 +191,8 @@ header .home:hove, header .home:focus, header .home:visited {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 546px;
-  height: 546px;
+  width: 46%;
+  height: 46%;
   background: url(../images/moon.svg) center no-repeat;
   background-size: contain;
 }
@@ -198,8 +201,8 @@ header .home:hove, header .home:focus, header .home:visited {
   position: absolute;
   bottom: 200px;
   left: 40px;
-  width: 414px;
-  height: 250px;
+  width: 35%;
+  height: 21%;
   background: url(../images/cloud.svg) center no-repeat;
   background-size: contain;
 }
@@ -208,8 +211,8 @@ header .home:hove, header .home:focus, header .home:visited {
   position: absolute;
   top: 510px;
   right: -85px;
-  width: 1530px;
-  height: 684px;
+  width: 128%;
+  height: 57%;
   background: url(../images/wolf.svg) center no-repeat;
   background-size: contain;
 }
@@ -236,8 +239,8 @@ header .home:hove, header .home:focus, header .home:visited {
   position: absolute;
   top: 180px;
   left: 150px;
-  width: 760px;
-  height: 617px;
+  width: 64%;
+  height: 52%;
   background: url(../images/stars.svg) center no-repeat;
   background-size: contain;
 }
