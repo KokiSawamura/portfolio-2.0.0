@@ -1,6 +1,7 @@
 (function ($) {
   $(function () {
-    /* Barba.Pjax.init(); */
+    Barba.Pjax.init();
+    Barba.Prefetch.init();
 
     $.scrollify({
       section: '.scrollify-section',
@@ -21,5 +22,24 @@
         console.log($('.pagination').find('a[href=\'#' + ref + '\']'),ref)
       }
     });
+
+    // var fixedContent = {
+    //   init: function () {
+    //     var self = this;
+
+    //     this.setParameters();
+
+    //     $(window).scroll(function(){
+    //       self.toggleClass($(this).scrollTop());
+    //     });
+    //   },
+    //   setParameters: function () {
+    //     this.content = $('.content');
+    //     this.contentTopPosition = this.content.offset().top;
+    //   },
+    //   toggleClass: function (value) {
+    //     if (value )
+    //   }
+    // };
   });
 })(jQuery);

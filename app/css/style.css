@@ -4,9 +4,14 @@
 body {
   font-family: 'Noto Sans JP', sans-serif;
   background-color: #002142;
+  color: white;
 }
 
 /* component */
+.container {
+  padding: 100px 128px;
+}
+
 .btn {
   display: inline-block;
   border-radius: 3px;
@@ -25,14 +30,26 @@ body {
   color: white;
 }
 
+.content-background {
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/content-background_moon.svg) center right no-repeat;
+  background-size: contain;
+}
+
 /* header */
 header {
   position: fixed;
   top: 40px;
   left: 40px;
+  z-index: 1;
 }
 
 header .home {
+  font-size: 24px;
   color: white;
   text-decoration: none;
 }
@@ -104,29 +121,62 @@ header .home:hove, header .home:focus, header .home:visited {
 }
 
 /* content */
-.scrollify-section {
+.scrollify-section, .hero {
   display: flex;
   align-items: center;
-  padding: 40px 128px;
 }
 
-#top h1 {
+h1 {
   margin-bottom: 4rem;
   font-size: 120px;
   font-family: "Josefin Sans";
-  color: white;
   font-weight: 400;
   text-shadow: 4px 7px #002144;
 }
 
-#top .border {
+h2 {
+  position: relative;
+  margin-bottom: 100px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+h2:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -128px;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: white;
+}
+
+h2 strong {
+  color: #FA3140;
+  font-weight: 400;
+}
+
+h3 {
+  margin-bottom: 50px;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+h3 small {
+  font-size: 16px;
+}
+
+.border {
   position: relative;
   width: 168px;
   height: 24px;
   margin-bottom: 4rem;
 }
 
-#top .border:before, #top .border:after {
+.border:before, .border:after {
   position: absolute;
   content: "";
   width: 70%;
@@ -134,21 +184,21 @@ header .home:hove, header .home:focus, header .home:visited {
   background-color: #FA3140;
 }
 
-#top .border:before {
+.border:before {
   top: 0;
   left: 0;
 }
 
-#top .border:after {
+.border:after {
   bottom: 0;
   right: 0;
 }
 
-#top .btn {
+.btn {
   font-size: 18px;
 }
 
-#top .lead {
+.lead {
   margin-bottom: 1rem;
   color: white;
   font-size: 28px;
@@ -156,73 +206,51 @@ header .home:hove, header .home:focus, header .home:visited {
 }
 
 /* background */
-.moon-background {
-  position: fixed;
+.main-background {
+  position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   z-index: -1;
 }
 
-.moonlight {
+.main-background_back {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -230px;
-  width: 1194px;
-  height: 1194px;
-  background: url(../images/moonlight.svg) center no-repeat;
-  background-size: 100%;
-}
-
-@media screen and (max-width: 928px) {
-  .moonlight {
-    top: calc(50% + 120px);
-    left: auto;
-    right: -420px;
-    width: 160%;
-    height: 160%;
-  }
-}
-
-.moon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 46%;
-  height: 46%;
-  background: url(../images/moon.svg) center no-repeat;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/main-background_back.svg) center right no-repeat;
   background-size: contain;
 }
 
-.cloud {
+.main-background_moon {
   position: absolute;
-  bottom: 200px;
-  left: 40px;
-  width: 35%;
-  height: 21%;
-  background: url(../images/cloud.svg) center no-repeat;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/main-background_moon.svg) center right no-repeat;
   background-size: contain;
 }
 
-.wolf {
+.main-background_wolf {
   position: absolute;
-  top: 510px;
-  right: -85px;
-  width: 128%;
-  height: 57%;
-  background: url(../images/wolf.svg) center no-repeat;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/main-background_wolf.svg) center right no-repeat;
   background-size: contain;
 }
 
 .portfolio {
   position: absolute;
-  top: 530px;
-  left: 160px;
+  top: 290px;
+  right: 345px;
   color: #FA3140;
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 700;
   text-shadow: 2px 3px 9px rgba(0, 0, 0, 0.25);
 }
@@ -243,4 +271,23 @@ header .home:hove, header .home:focus, header .home:visited {
   height: 52%;
   background: url(../images/stars.svg) center no-repeat;
   background-size: contain;
+}
+
+#top .main-background {
+  position: fixed;
+}
+
+#aboutme .lower {
+  visibility: hidden;
+}
+
+.profile {
+  display: flex;
+  margin-right: -16px;
+  margin-left: -16px;
+}
+
+.profile > div {
+  padding-right: 16px;
+  padding-left: 16px;
 }
