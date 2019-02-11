@@ -17,6 +17,11 @@ body {
   color: white;
 }
 
+strong {
+  color: $accent-color;
+  font-weight: 400;
+}
+
 /* component */
 
 .container {

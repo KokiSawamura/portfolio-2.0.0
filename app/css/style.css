@@ -12,6 +12,11 @@ body {
   color: white;
 }
 
+strong {
+  color: #FA3140;
+  font-weight: 400;
+}
+
 /* component */
 .container {
   padding: 100px 128px;

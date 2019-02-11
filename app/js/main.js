@@ -23,10 +23,11 @@
       }
     });
 
-    var fullPage = function () {
+    var fullPage =  {
       init: function () {
         var self = this;
 
+        this.setParameters();
         this.applyStyle();
 
         $(window).on('resize', function(){
